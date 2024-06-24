@@ -1,4 +1,4 @@
-package main.java.ordenacao;
+package main.java.coparableXcomparato.ordenacao;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package main.java.pesquisa;
+package main.java.coparableXcomparato.pesquisa;
 
 public class Livro {
     private String livro;

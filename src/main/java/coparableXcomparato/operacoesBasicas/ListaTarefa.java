@@ -1,4 +1,4 @@
-package main.java.operacoesBasicas;
+package main.java.coparableXcomparato.operacoesBasicas;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.operacoesBasicas;
+package main.java.coparableXcomparato.operacoesBasicas;
 
 public class Tarefa {
     private String descricao;
