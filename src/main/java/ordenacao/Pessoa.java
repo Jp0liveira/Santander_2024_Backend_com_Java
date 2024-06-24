@@ -1,7 +1,10 @@
 package main.java.ordenacao;
 
-public class Pessoa {
+import java.util.Comparator;
 
+public class Pessoa implements Comparable<Pessoa> {
+
+    
     private String nome;
 
     private Integer idade;
@@ -64,6 +67,21 @@ public class Pessoa {
             ", idade='" + getIdade() + "'" +
             ", altura='" + getAltura() + "'" +
             "}";
+    }
+
+    @Override
+    public int compareTo(Pessoa pessoa) {
+        return Integer.compare(this.idade, pessoa.getIdade());
+    }
+
+}
+
+
+class ComparatorPorAltura implements Comparator<Pessoa> {
+    
+    @Override
+    public int compare(Pessoa pessoa1, Pessoa pessoa2) {
+        return Double.compare(pessoa1.getAltura(), pessoa2.getAltura());
     }
     
 }
