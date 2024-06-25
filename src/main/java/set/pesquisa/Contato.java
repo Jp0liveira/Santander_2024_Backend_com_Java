@@ -1,17 +1,18 @@
-package main.java.set.operacoesBasicas;
+package main.java.set.pesquisa;
 
-public class Convidado {
-
+public class Contato {
+    
     private String nome;
 
-    private Integer codigo;
-    
+    private String numero;
 
-    public Convidado() { }
 
-    public Convidado(String nome, Integer codigo) {
+    public Contato() {
+    }
+
+    public Contato(String nome, String numero) {
         this.nome = nome;
-        this.codigo = codigo;
+        this.numero = numero;
     }
 
     public String getNome() {
@@ -22,30 +23,30 @@ public class Convidado {
         this.nome = nome;
     }
 
-    public Integer getCodigo() {
-        return this.codigo;
+    public String getNumero() {
+        return this.numero;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
-    public Convidado nome(String nome) {
+    public Contato nome(String nome) {
         setNome(nome);
         return this;
     }
 
-    public Convidado codigo(Integer codigo) {
-        setCodigo(codigo);
+    public Contato numero(String numero) {
+        setNumero(numero);
         return this;
     }
 
-    
+
     @Override
     public String toString() {
         return "{" +
             " nome='" + getNome() + "'" +
-            ", codigo='" + getCodigo() + "'" +
+            ", numero='" + getNumero() + "'" +
             "}";
     }
 
@@ -53,7 +54,7 @@ public class Convidado {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
+        result = prime * result + ((nome == null) ? 0 : nome.hashCode());
         return result;
     }
 
@@ -65,16 +66,15 @@ public class Convidado {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Convidado other = (Convidado) obj;
-        if (codigo == null) {
-            if (other.codigo != null)
+        Contato other = (Contato) obj;
+        if (nome == null) {
+            if (other.nome != null)
                 return false;
-        } else if (!codigo.equals(other.codigo))
+        } else if (!nome.equals(other.nome))
             return false;
         return true;
     }
 
-   
     
     
-}
+} 
